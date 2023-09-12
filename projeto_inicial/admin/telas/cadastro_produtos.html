@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Produto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cartao.css">
+    <link rel="stylesheet" href="../assets/css/cadastra_cliente.css">
+    <link rel="stylesheet" href="../assets/css/componentes/inputs.css">
+    <link rel="stylesheet" href="../assets/css/componentes/botao.css">
+</head>
+<body>
+    <header class="cabecalho container">
+        <img src="../assets/img/Alarcon-Pet-Pet-Shop.png" alt="Logotipo Alarcon´s" class="cabecalho__logo"  href="lista_cliente.html">
+        <nav>
+            <ul class="cabecalho__lista-navegacao">
+                <li class="cabecalho__link"><a href="lista_cliente.html">Dashboard</a></li>
+                <li class="cabecalho__link"><a href="cadastro_produtos.html">Produtos</a></li>
+                <li class="cabecalho__link"><a href="cadastra_cliente.html">Clientes</a></li>
+                <li class="cabecalho__link"><a href="#">Pets</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container flex flex--centro flex--coluna">
+        <section class="cartao cadastro">
+            <h1 class="cartao__titulo">Cadastrar Produto</h1>
+            <form action="#" class="flex flex--coluna" data-form>
+                <div class="input-container">
+                    <input name="prod" id="prod" class="input" type="text" placeholder="nome do Produto" data-prod>
+                    <label class="input-label" for="prod">Nome do Produto</label>
+                    <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span>
+                </div>
+                <div class="input-container">
+                    <input name="preco" id="preco" class="input" type="text" placeholder="preco" data-preco>
+                    <label class="input-label" for="preco">Preço</label>
+                    <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span>
+                </div>
+                <div class="input-container">
+                    <input name="descr" id="descr" class="input" type="text" placeholder="descr" data-descr>
+                    <label class="input-label" for="descr">Descrição</label>
+                    <span class="input-mensagem-erro">descreve o produto</span>
+                </div>
+                
+                <button type="submit"class="botao">
+                    Cadastrar um produto
+                </button>
+            </form>
+        </section>
+    </main>
+
+<script type="module" src="../controller/cadastro_produto-controller.js"></script>
+
+</body>
+</html>
